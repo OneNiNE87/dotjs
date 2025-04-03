@@ -1,0 +1,6 @@
+[InternetShortcut]
+URL=javascript:(function(){let links=[...document.querySelectorAll('a.album-link')].map(a=>a.href).join('\n');if(navigator.clipboard){navigator.clipboard.writeText(links).then(()=>alert('Copied '+links.split('\n').length+' URLs to clipboard!')).catch(err=>alert('Copy failed: '+err));}else{let textarea=document.createElement('textarea');textarea.value=links;document.body.appendChild(textarea);textarea.select();document.execCommand('copy');document.body.removeChild(textarea);alert('Copied '+links.split('\n').length+' URLs to clipboard!');}})();
+IDList=
+HotKey=0
+IconFile=C:\Users\OneNiNE\AppData\Local\Mozilla\Firefox\Profiles\xdi43a2h.default-default\shortcutCache\MEohb2W6IbzEeQAgCbWeYytcUF+Wlv4wrQIRB8TgE6k=.ico
+IconIndex=0
